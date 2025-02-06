@@ -1,0 +1,33 @@
+print("Welcome to Python Pizza Deliveries!")
+
+bill = 0
+
+# Get the size of the pizza and set the base price
+size = input("What size pizza do you want? S, M or L: ")
+if size == "S":
+    bill += 15
+elif size == "M":
+    bill += 20
+else:
+    bill += 25
+
+# Ask about pepperoni
+pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
+if pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+
+# Ask about extra cheese
+extra_cheese = input("Do you want extra cheese? Y or N: ")
+if extra_cheese == "Y":
+    bill += 1
+
+# Output the final bill
+print(f"Your final bill is: ${bill}.")
+
+
+
+
+
