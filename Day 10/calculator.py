@@ -84,6 +84,5 @@ def calculator():
             print("Exiting the calculator. Goodbye!")
             break
 
-
 # Run the calculator
 calculator()
